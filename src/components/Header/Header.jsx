@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -55,24 +56,24 @@ export default function Header() {
             <nav>
               <ul className="menu">
                 <li>
-                  <a className="menu-link" href="/">Home</a>
+                  <Link className="menu-link" to="/">Home</Link>
                 </li>
                 <li>
-                  <a className="menu-link" href="/projects">Projects</a>
+                  <Link className="menu-link" to="/projects">Projects</Link>
                 </li>
                 <li>
-                  <a className="menu-link" href="/experiences">Experiences</a>
+                  <Link className="menu-link" to="/experiences">Experiences</Link>
                 </li>
                 <li>
-                  <a className="menu-link" href="/blog">Blog</a>
+                  <Link className="menu-link" to="/blog">Blog</Link>
                 </li>
                 <li>
-                  <a href="mailto:aniksaha859@gmail.com">Contact</a>
+                  <Link to="mailto:aniksaha859@gmail.com">Contact</Link>
                 </li>
               </ul>
             </nav>
           </div>
-          <div className="container d-none d-md-block">
+          <div className="container d-none d-md-block sticky-top">
             <div className="header-wrapper d-flex justify-content-between align-items-center">
               <div className="logo">
                 {/* <a href="index.html">
@@ -84,24 +85,24 @@ export default function Header() {
                 <nav className="desktop-nav">
                   <ul className="header-menu d-flex flex-row justify-content-center menu">
                     <li className="px-2 px-lg-3 ">
-                      <a className="menu-link" href="/">
+                      <Link className="menu-link" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="px-2 px-lg-3 ">
-                      <a className="menu-link" href="/projects">
+                      <Link className="menu-link" to="/projects">
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li className="px-2 px-lg-3 ">
-                      <a className="menu-link" href="/experiences">
+                      <Link className="menu-link" to="/experiences">
                         Experiences
-                      </a>
+                      </Link>
                     </li>
                     <li className="px-2 px-lg-3 ">
-                      <a className="menu-link" href="/blog">
+                      <Link className="menu-link" to="/blog">
                         Blog
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>
@@ -109,9 +110,9 @@ export default function Header() {
               {/* header button */}
               <div className="header-btn-wrapper">
                 <a className="btn orange-btn btn_effect">
-                  <a href="mailto:aniksaha859@gmail.com">
+                  <Link to="mailto:aniksaha859@gmail.com">
                     <span className="z-1 position-relative">contact</span>
-                  </a>
+                  </Link>
                 </a>
               </div>
             </div>
