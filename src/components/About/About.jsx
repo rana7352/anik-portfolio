@@ -55,7 +55,7 @@ export default function About() {
                       </div>
                     </div> */}
                   </div>
-                  <div className="row flex-column row-mobile-margin mt-60">
+                  <div className="row flex-column row-mobile-margin mt-60" style={{margin: "0rem 12rem"}}>
                     <div className="col-12 mb-0 mb-20 ">
                       <div className="row">
                         <div className="col-12 col-sm-6 col-lg-6">
